@@ -4,7 +4,7 @@ FROM openjdk:latest
 
 COPY pom.xml ./
 
-RUN npm install
+RUN mvn install
 
 WORKDIR /src/main/java/com/mt/services
 
