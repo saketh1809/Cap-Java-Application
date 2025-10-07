@@ -1,4 +1,5 @@
 FROM maven:3.9.4-eclipse-temurin-17
+FROM openjdk:latest
 
 # RUN apt-get install openjdk-17-jdk -y
 WORKDIR /webapp
