@@ -1,12 +1,13 @@
-FROM openjdk:latest
+FROM maven:3.9.4-eclipse-temurin-17
 
 # RUN apt-get install openjdk-17-jdk -y
+WORKDIR /webapp
 
-COPY pom.xml ./
+# COPY pom.xml ./
 
 RUN mvn clean install
 
-WORKDIR /src/main/java/com/mt/services
+# WORKDIR /src/main/java/com/mt/services
 
 COPY . .
 
