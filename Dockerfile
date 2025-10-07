@@ -4,7 +4,7 @@ FROM openjdk:latest
 
 COPY pom.xml ./
 
-RUN mvn install
+RUN mvn clean install
 
 WORKDIR /src/main/java/com/mt/services
 
