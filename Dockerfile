@@ -4,7 +4,7 @@ FROM openjdk:latest
 # RUN apt-get install openjdk-17-jdk -y
 WORKDIR /webapp
 
-# COPY pom.xml ./
+COPY pom.xml ./
 
 RUN mvn clean install
 
